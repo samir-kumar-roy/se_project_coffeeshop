@@ -79,7 +79,7 @@ body,
 .header__link:hover {
   color: #d35722;
 }
-.header__title_span {
+.span {
   color: #3f96f3;
   display: block;
   font-family: "Noto Serif";
