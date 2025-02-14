@@ -223,7 +223,7 @@ body,
   font-size: 16px;
   line-height: 20px;
 }
-.form_input,
+.form__input,
 .form__button {
   display: block;
   width: 100%;
@@ -231,11 +231,11 @@ body,
   margin-top: 8px;
   border-radius: 4px;
 }
-.form_input {
+.form__input {
   padding: 15px 20px;
   border: 1px solid #838383;
 }
-.form_input::placeholder {
+.form__input::placeholder {
   font-family: Inter;
   font-style: normal;
   font-weight: normal;
