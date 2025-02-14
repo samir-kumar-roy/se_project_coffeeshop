@@ -2,6 +2,7 @@ body,
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 .page {
   /* issue fixed */
@@ -135,8 +136,7 @@ body,
   background-size: cover;
   background-repeat: no-repeat;
   object-fit: cover;
-  padding-bottom: 2px;
-  padding-top: 2px;
+  padding: 2px 0;
   color: #fff;
 }
 .recipes__title {
@@ -182,4 +182,94 @@ body,
 .recipes__video_caption {
   display: flex;
   justify-content: space-between;
+}
+
+.reservation {
+  background-color: #d9e7ff;
+  background-image: url("../images/background_reservation.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  padding: 2px 0;
+}
+
+.reservation__title {
+  text-align: center;
+  margin: 100px 0 80px;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+}
+
+.reservation__form {
+  margin: 0;
+  padding: 0;
+}
+.form {
+  max-width: 385px;
+  margin: 0 auto 120px;
+}
+.form__fieldset {
+  border: none;
+}
+.form__label {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+.form_input,
+.form__button {
+  display: block;
+  width: 100%;
+  margin-bottom: 32px;
+  margin-top: 8px;
+  border-radius: 4px;
+}
+.form_input {
+  padding: 15px 20px;
+  border: 1px solid #838383;
+}
+.form_input::placeholder {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+.form__button {
+  background-color: #1878dc;
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s ease;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__button:hover {
+  background-color: #3f96f3;
+  cursor: pointer;
+}
+.user-terms-wrapper {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+.user-terms-wrapper__input {
+  height: 20px;
+  width: 20px;
+  border-radius: 2px;
+  margin: 0;
+  padding: 0;
 }
