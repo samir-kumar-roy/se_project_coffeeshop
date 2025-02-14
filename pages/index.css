@@ -23,7 +23,7 @@ body,
   position: relative;
   box-sizing: border-box;
 }
-.title {
+.header__title {
   max-width: 729px;
   margin-top: 128px;
   font-size: 60px;
@@ -79,7 +79,7 @@ body,
 .header__link:hover {
   color: #d35722;
 }
-.title__span {
+.header__title_span {
   color: #3f96f3;
   display: block;
   font-family: "Noto Serif";
