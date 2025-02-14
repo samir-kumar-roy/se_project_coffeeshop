@@ -23,7 +23,7 @@ body,
   position: relative;
   box-sizing: border-box;
 }
-.header__title {
+.title {
   max-width: 729px;
   margin-top: 128px;
   font-size: 60px;
