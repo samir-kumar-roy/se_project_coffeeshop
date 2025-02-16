@@ -44,8 +44,8 @@
           </ul>
         </nav>
         <h1 class="header__title">
-          <span class="span">Specialty coffee</span> in the Triple Espresso
-          Coffee Shop
+          <span class="header__span-accent">Specialty coffee</span> in the
+          Triple Espresso Coffee Shop
         </h1>
         <p class="header__description">
           Welcome to our study zone! We've got the coffee to energize you and
@@ -57,12 +57,12 @@
           class="header__image"
         />
         <div class="header__footer">
-          <div class="hours">
-            <p>Hours</p>
-            <p class="hour">Monday - Friday (10:00 - 19:00)</p>
-            <p class="hour">Saturday - Sunday (11:00 - 18:00)</p>
+          <div class="header__hours">
+            <p class="header__paragraph">Hours</p>
+            <p class="header__paragraph">Monday - Friday (10:00 - 19:00)</p>
+            <p class="header__paragraph">Saturday - Sunday (11:00 - 18:00)</p>
           </div>
-          <p class="header__address">
+          <p class="header__paragraph">
             200 Success Avenue, The Town of Triple Peaks
           </p>
         </div>
@@ -75,7 +75,7 @@
             convenience:
           </p>
           <ul class="recipes__videos">
-            <li class="video">
+            <li class="recipes__video">
               <iframe
                 src="https://www.youtube.com/embed/j6VlT_jUVPc?si=fuI_5DdQHF8qjX9v"
                 class="recipes__iframe"
@@ -84,12 +84,12 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <p class="video__caption">
+              <p class="recipes__video_caption">
                 <span>video title</span>
                 <span>Time</span>
               </p>
             </li>
-            <li class="video">
+            <li class="recipes__video">
               <iframe
                 src="https://www.youtube.com/embed/st571DYYTR8?si=Sbu9yLAuN6eJVAEz"
                 class="recipes__iframe"
@@ -98,7 +98,7 @@
                 referrerpolicy="strict-origin-when-cross-origin"
                 allowfullscreen
               ></iframe>
-              <p class="video__caption">
+              <p class="recipes__video_caption">
                 <span>video title</span>
                 <span>Time</span>
               </p>
@@ -147,18 +147,15 @@
                 id="email-input"
               />
 
-              <button class="form__button">Book a table</button>
-              <p class="user-terms-wrapper">
-                <input
-                  required
-                  type="checkbox"
-                  class="form__input user-terms-wrapper__input"
-                  id="checkbox"
-                />
-                <label for="checkbox" class="form__label"
-                  >I agree with the terms of use</label
-                >
-              </p>
+              <input
+                type="submit"
+                class="form__input form__button"
+                value="Book a table"
+              />
+              <label class="form__label form__label_type_checkbox">
+                <input type="checkbox" class="form__checkbox" required />
+                I agree with the terms of use
+              </label>
             </fieldset>
           </form>
         </section>
@@ -168,8 +165,8 @@
             We brew coffee from locally roasted, Fairtrade certified beans and
             use biodegradable cups. All teas from our collection are $2/cup.
           </p>
-          <div class="menu__cards cards">
-            <div class="cards__card card">
+          <div class="menu__cards">
+            <div class="card">
               <h3 class="card__title">Filter</h3>
               <ul>
                 <li class="card__list-item">
@@ -196,7 +193,7 @@
                 </li>
               </ul>
             </div>
-            <div class="cards__card card">
+            <div class="card">
               <h3 class="card__title">Espresso</h3>
               <ul>
                 <li class="card__list-item">
@@ -219,7 +216,7 @@
                 </li>
               </ul>
             </div>
-            <div class="cards__card card card__center">
+            <div class="card">
               <h3 class="card__title">Baked Goods</h3>
               <ul>
                 <li class="card__list-item">
@@ -253,27 +250,25 @@
         <section class="about" id="contact">
           <div class="about__circle"></div>
           <div class="about__circle about__circle_animation_blurred"></div>
-          <div class="about__wrapper">
-            <h2 class="about__title">About the   coffee shop</h2>
-            <div class="about__content">
-              <p class="about__paragraph">
-                Our coffee shop is located in the Triple Peaks Library. It
-                features 6 tables and free WiFi.
-              </p>
-              <p class="about__paragraph">
-                Our main mission is keeping guests cozy and energized.
-              </p>
-              <p class="about__paragraph">
-                Besides that, we try to reduce our environmental impact — so we
-                don't sell single-use cups. But you can buy one of our reusable
-                cups!
-              </p>
-            </div>
+          <h2 class="about__title">About the coffee shop</h2>
+          <div class="about__content">
+            <p class="about__paragraph">
+              Our coffee shop is located in the Triple Peaks Library. It
+              features 6 tables and free WiFi.
+            </p>
+            <p class="about__paragraph">
+              Our main mission is keeping guests cozy and energized.
+            </p>
+            <p class="about__paragraph">
+              Besides that, we try to reduce our environmental impact — so we
+              don't sell single-use cups. But you can buy one of our reusable
+              cups!
+            </p>
           </div>
         </section>
       </main>
       <footer class="footer" id="footer">
-        <section class="footer__content">
+        <div class="footer__content">
           <img
             src="./images/logo_coffeeshop_light.svg"
             class="footer__logo"
@@ -283,23 +278,22 @@
             <h3 class="footer__social-heading">Social heading</h3>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <span class="footer__social-icon"
-                  ><img
-                    class="footer__social-icon-image"
-                    src="./images/facebook_white.svg"
-                    alt="facebook icon" /></span
-                ><span class="footer__social-link">Facebook</span>
+                <img
+                  class="footer__social-icon"
+                  src="./images/facebook_white.svg"
+                  alt="facebook icon"
+                /><a class="footer__social-link" href="#">Facebook</a>
               </li>
               <li class="footer__list-item">
-                <span class="footer__social-icon"
-                  ><img
-                    src="./images/instagram_white.svg"
-                    alt="Instagram icon" /></span
-                ><span class="footer__social-link">Instagram</span>
+                <img
+                  class="footer__social-icon"
+                  src="./images/instagram_white.svg"
+                  alt="Instagram icon"
+                /><a href="#" class="footer__social-link">Instagram</a>
               </li>
             </ul>
           </div>
-        </section>
+        </div>
         <p class="footer__copyright">&copy; 2025 Samir Roy</p>
       </footer>
     </div>

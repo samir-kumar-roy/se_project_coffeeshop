@@ -1,9 +1,18 @@
 .header {
+  background-color: #fff;
+  background-image: url("../images/background_header.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+
   display: flex;
   flex-direction: column;
   height: 800px;
   padding: 30px 80px 40px;
   position: relative;
+  box-sizing: border-box;
+  z-index: 1;
   box-sizing: border-box;
 }
 .header__title {
@@ -13,7 +22,8 @@
   line-height: 72px;
   color: #000;
   margin-bottom: 28px;
-  font-family: "Inter";
+  box-sizing: border-box;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 60px;
@@ -24,7 +34,7 @@
 .header__description {
   max-width: 683px;
   color: #000;
-  font-family: "Noto Serif";
+  font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -32,7 +42,7 @@
 }
 
 .header__image {
-  z-index: 1;
+  z-index: -1;
   position: absolute;
   width: 646px;
   height: 568px;
@@ -41,12 +51,12 @@
 }
 
 .header__footer {
-  font-family: "Inter";
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  margin-top: 100px;
+  margin-top: auto;
   width: 100%;
   display: flex;
   align-items: flex-end;
@@ -62,7 +72,7 @@
 .header__link:hover {
   color: #d35722;
 }
-.span {
+.header__span-accent {
   color: #3f96f3;
   display: block;
   font-family: "Noto Serif";
@@ -72,44 +82,6 @@
   line-height: 72px;
 }
 
-.header__address {
-  /* issue fixed */
-  margin: 8px 0 0;
+.header__paragraph {
   color: #838383;
-}
-.nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.nav__logo {
-  height: 39px;
-  width: 105px;
-  margin-top: 30px;
-  margin-left: 30px;
-}
-.nav__links {
-  list-style-type: none;
-  margin-top: 30px;
-  display: flex;
-  padding: 0;
-  gap: 20px;
-  padding: 0;
-  margin-right: 80px;
-}
-
-.nav__link {
-  color: #000;
-  text-decoration: none;
-  font-weight: 500;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  transition: opacity 0.3s ease;
-}
-.nav__link:hover {
-  color: #d35722;
-  opacity: 0.5;
 }
