@@ -21,8 +21,8 @@
   box-sizing: border-box;
 }
 .recipes__subtitle {
-  margin-bottom: 80px;
-  margin-left: 80px;
+  margin: 0 0 80px 80px;
+
   max-width: 438px;
   box-sizing: border-box;
   font-family: "Noto Serif", "Times New Roman", serif;
@@ -46,11 +46,12 @@
   width: 480px;
   margin-bottom: 24px;
   box-sizing: border-box;
+  border: none;
 }
-.recipes__video_caption {
+.recipes__video-caption {
   display: flex;
   justify-content: space-between;
-
+  margin: 0;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;

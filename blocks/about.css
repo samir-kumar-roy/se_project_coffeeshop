@@ -1,4 +1,6 @@
 .about {
+  display: flex;
+  justify-content: space-between;
   background-color: #0a2850;
   color: #fff;
   padding: 100px 80px 173px;
@@ -25,12 +27,16 @@
   max-width: 660px;
 }
 .about__paragraph {
+  padding: 0;
   margin-bottom: 20px;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
   line-height: 30px;
+}
+.about__paragraph:last-child {
+  margin-bottom: 0;
 }
 .about__circle {
   height: 426px;

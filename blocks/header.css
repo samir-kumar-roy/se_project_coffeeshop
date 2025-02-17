@@ -9,19 +9,15 @@
   display: flex;
   flex-direction: column;
   height: 800px;
-  padding: 30px 80px 40px;
+  padding: 30px 0 40px 80px;
   position: relative;
-  box-sizing: border-box;
   z-index: 1;
   box-sizing: border-box;
 }
 .header__title {
   max-width: 729px;
-  margin-top: 128px;
-  font-size: 60px;
-  line-height: 72px;
+  margin: 183px 0 28px;
   color: #000;
-  margin-bottom: 28px;
   box-sizing: border-box;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
@@ -33,6 +29,7 @@
 
 .header__description {
   max-width: 683px;
+  margin: 0;
   color: #000;
   font-family: "Noto Serif", "Times New Roman", serif;
   font-style: normal;
@@ -84,4 +81,5 @@
 
 .header__paragraph {
   color: #838383;
+  margin: 0 80px 0 0;
 }
